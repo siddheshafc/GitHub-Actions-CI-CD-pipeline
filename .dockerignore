@@ -1,0 +1,13 @@
+**/node_modules
+**/dist
+**/coverage
+**/.git
+**/.github
+**/*.md
+**/.env
+**/.env.*
+**/npm-debug.log*
+**/.DS_Store
+terraform
+**/*.test.js
+**/*.test.jsx
