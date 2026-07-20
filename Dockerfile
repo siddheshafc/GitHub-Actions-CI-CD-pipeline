@@ -1,5 +1,5 @@
 # Stage 1 build the React frontend into static assets
-FROM node:26-alpine AS frontend-build
+FROM node:22-alpine AS frontend-build
 WORKDIR /frontend
 
 COPY frontend/package*.json ./
@@ -9,7 +9,7 @@ COPY frontend/ ./
 RUN npm run build
 
 # Stage 2 install backend production dependencies only
-FROM node:26-alpine AS backend-deps
+FROM node:22-alpine AS backend-deps
 WORKDIR /backend
 
 COPY backend/package*.json ./
@@ -17,7 +17,7 @@ RUN npm ci --omit=dev
 
 
 # Stage 3 final minimal runtime image
-FROM node:26-alpine AS runtime
+FROM node:22-alpine AS runtime
 
 # Install curl only for the HEALTHCHECK, then drop package cache
 RUN apk add --no-cache curl
