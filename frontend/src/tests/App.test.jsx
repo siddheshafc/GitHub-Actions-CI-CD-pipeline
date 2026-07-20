@@ -35,7 +35,7 @@ describe('App', () => {
     api.list.mockResolvedValue([sampleTodo]);
     render(<App />);
     expect(await screen.findByText('Buy milk')).toBeInTheDocument();
-    expect(screen.getByText('1 task(s) remaining')).toBeInTheDocument();
+    expect(screen.getByText('1 tasks remaining')).toBeInTheDocument();
   });
 
   it('adds a new todo', async () => {
@@ -73,7 +73,7 @@ describe('App', () => {
     await userEvent.click(checkbox);
 
     await waitFor(() => expect(api.toggle).toHaveBeenCalledWith('1'));
-    expect(await screen.findByText('0 task(s) remaining')).toBeInTheDocument();
+    expect(await screen.findByText('0 tasks remaining')).toBeInTheDocument();
   });
 
   it('deletes a todo', async () => {
