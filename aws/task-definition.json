@@ -1,0 +1,37 @@
+{
+  "family": "todo-app-ecs-td",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "1024",
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "executionRoleArn": "arn:aws:iam::124355659439:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::124355659439:role/todo-app-ecs-task-execution",
+  "containerDefinitions": [
+    {
+      "name": "todo-app",
+      "image": "REPLACE_ME",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/todo-app-ecs-td",
+          "awslogs-create-group": "true",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}
