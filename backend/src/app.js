@@ -11,6 +11,10 @@ function createApp() {
   app.use(helmet());
   app.use(cors());
   app.use(express.json({ limit: '10kb' }));
+  
+  app.use(helmet({
+    hsts: false   // don't advertise HTTPS-only until a real cert/listener exists
+  }));
 
 
   app.get('/health', (req, res) => {
