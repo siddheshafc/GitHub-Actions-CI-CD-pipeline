@@ -205,10 +205,7 @@ jobs:
       image-uri: ${{ steps.ecr-uri.outputs.uri }}
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up QEMU (for multi-arch builds)
-        uses: docker/setup-qemu-action@v3
-
+      
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -222,13 +219,13 @@ jobs:
         id: ecr-login
         uses: aws-actions/amazon-ecr-login@v2
 
-      - name: Build and push multi-arch image to ECR
+      - name: Build and push image to ECR
         uses: docker/build-push-action@v6
         with:
           context: .
           file: ./Dockerfile
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: |
             ${{ steps.ecr-login.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest
             ${{ steps.ecr-login.outputs.registry }}/${{ env.ECR_REPOSITORY }}:${{ needs.build-and-scan.outputs.image-tag }}
