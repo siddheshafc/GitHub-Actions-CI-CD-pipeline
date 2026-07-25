@@ -15,7 +15,7 @@
   "containerDefinitions": [
     {
       "name": "todo-app",
-      "image": "REPLACE_ME",
+      "image": "Placeholder",
       "essential": true,
       "portMappings": [
         {
