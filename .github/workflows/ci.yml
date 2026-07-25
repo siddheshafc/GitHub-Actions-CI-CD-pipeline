@@ -20,7 +20,7 @@ permissions:
 env:
   NODE_VERSION: '26.4.0'
   IMAGE_NAME: todo-app
-  ECR_REPOSITORY: todo-app
+  ECR_REPOSITORY: siddhesh/todo-app
 
 jobs:
   backend-test:
