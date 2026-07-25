@@ -17,7 +17,7 @@ permissions:
 
 env:
   AWS_REGION: ${{ secrets.AWS_REGION }}
-  ECS_CLUSTER: todo-app-cluster
+  ECS_CLUSTER: to-do-app-cluster
   ECS_SERVICE: todo-app-service
   CONTAINER_NAME: todo-app
 
