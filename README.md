@@ -51,24 +51,28 @@ Node.js Backend + React Frontend
 <img width="1905" height="965" alt="ci workflow" src="https://github.com/user-attachments/assets/ff45e3b2-2d58-4727-9fec-fd97837c4403" />
 <img width="1910" height="947" alt="ci workflow 1 " src="https://github.com/user-attachments/assets/36718943-b959-4c4f-8589-e79c56622091" />
 <img width="1896" height="945" alt="cd wf" src="https://github.com/user-attachments/assets/2c0b3573-ea1f-4de1-8982-c713b029f9ae" />
+
 ## Docker Hub:
 <img width="1882" height="932" alt="docker hub" src="https://github.com/user-attachments/assets/9fc6bbe9-e06a-4035-aee1-fc0968be7b1c" />
+
 ## Sonarqube Analysis:
 <img width="1917" height="907" alt="sonarqube" src="https://github.com/user-attachments/assets/409a9a6c-80ee-40e6-ab88-916b36bd8004" />
+
 ## Trivy scan results:
 <img width="1877" height="890" alt="trivy scan" src="https://github.com/user-attachments/assets/5720034d-a385-4f2e-8549-2858d4bb322b" />
+
 ## AWS ECS Cluster:
 <img width="1912" height="910" alt="ecs" src="https://github.com/user-attachments/assets/301bd762-2a94-4e3a-809f-de760687b858" />
 <img width="1881" height="862" alt="td ecs" src="https://github.com/user-attachments/assets/beb9e02f-d833-4897-b655-8e4ede63fa35" />
+
 ## ECR:
 <img width="1891" height="837" alt="ecr" src="https://github.com/user-attachments/assets/ceee8cf2-c4ab-4f0d-8a55-5a771315f706" />
+
 ## ALB:
 <img width="1877" height="925" alt="alb" src="https://github.com/user-attachments/assets/0e33697d-6e08-458b-9255-8b5fc81fc018" />
+
 ## Deployed Application Frontend:
 <img width="590" height="1108" alt="IMG-20260726-WA0005" src="https://github.com/user-attachments/assets/bf3b9269-903e-429f-9c3f-11b3b7b04118" />
-
-
-
 
 ---
 
