@@ -1,4 +1,4 @@
-<img width="1912" height="910" alt="ecs" src="https://github.com/user-attachments/assets/dcc32a51-a5cd-408d-8ca3-a4cd15186043" /># GitHub-Actions-CI-CD-pipeline
+# GitHub-Actions-CI-CD-pipeline
 End-to-end CI/CD pipeline utilizing Docker for containerization, SonarQube for code quality, Trivy for vulnerability scanning, and AWS for automated deployment.
 
 
